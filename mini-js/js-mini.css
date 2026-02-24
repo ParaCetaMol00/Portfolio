@@ -145,6 +145,7 @@
     .reveal-delay-2 { transition-delay:0.2s; }
 
     @media (max-width:768px) {
+            .cursor, .cursor-ring { display: none; }
       nav { padding:1.2rem 1.5rem; }
       .project-hero { padding:6rem 1.5rem 3rem; }
       .screenshots,.mini-projects,.progress-tracker,.project-cta { padding:2rem 1.5rem; }
