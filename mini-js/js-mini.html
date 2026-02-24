@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Mini Projects — Emmanuel Oyewole</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="js-mini.css" />
+   
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+   <nav>
+    <a href="/index.html" class="nav-logo">EAO</a>
+    <a href="/index.html" class="back-btn"><span class="arrow">←</span> Back to Portfolio</a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="hero-glow"></div>
+    <div class="project-hero-content">
+      <div class="project-num">Project 03</div>
+      <h1>JS Mini<br><span>Projects</span></h1>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">Type</span>
+          <span class="meta-value">Learning Collection</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Status</span>
+          <span class="meta-value" style="color:var(--amber)">✦ Ongoing</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Year</span>
+          <span class="meta-value">2025</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">Developer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-body">
+
+    <div class="screenshots reveal">
+      <div class="screenshot-main">
+        <div class="screenshot-placeholder">
+          <div class="icon">🖼</div>
+          <p>Main Screenshot</p>
+          <span>Replace with your actual screenshot — recommended: 1280×720px</span>
+        </div>
+      </div>
+      <div class="screenshot-thumbs">
+        <div class="screenshot-thumb">To-Do App</div>
+        <div class="screenshot-thumb">Quiz App</div>
+        <div class="screenshot-thumb">Countdown</div>
+      </div>
+    </div>
+
+    <!-- MINI-PROJECT CARDS -->
+    <div class="mini-projects reveal reveal-delay-1">
+      <h2>The Collection</h2>
+      <div class="mini-grid">
+        <div class="mini-card">
+          <div class="mini-card-num">01</div>
+          <div class="mini-card-title">To-Do List App</div>
+          <div class="mini-card-desc">Add, complete, and delete tasks. Data persists in localStorage. First real taste of DOM manipulation and event listeners.</div>
+          <div class="mini-card-concepts">
+            <span class="concept-tag">DOM</span>
+            <span class="concept-tag">Events</span>
+            <span class="concept-tag">localStorage</span>
+          </div>
+          <a href="#" class="mini-card-link" target="_blank">View Live ↗</a>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-num">02</div>
+          <div class="mini-card-title">Quiz App</div>
+          <div class="mini-card-desc">A multiple-choice quiz with score tracking, a timer per question, and a results screen. Taught me array logic and conditional rendering.</div>
+          <div class="mini-card-concepts">
+            <span class="concept-tag">Arrays</span>
+            <span class="concept-tag">setTimeout</span>
+            <span class="concept-tag">Conditionals</span>
+          </div>
+          <a href="#" class="mini-card-link" target="_blank">View Live ↗</a>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-num">03</div>
+          <div class="mini-card-title">Countdown Timer</div>
+          <div class="mini-card-desc">Set a target date and watch it count down in real time. Built with setInterval, Date objects, and live DOM updates every second.</div>
+          <div class="mini-card-concepts">
+            <span class="concept-tag">setInterval</span>
+            <span class="concept-tag">Date API</span>
+            <span class="concept-tag">DOM Updates</span>
+          </div>
+          <a href="#" class="mini-card-link" target="_blank">View Live ↗</a>
+        </div>
+        <!-- ADD MORE MINI PROJECTS HERE — just copy a .mini-card block above -->
+      </div>
+    </div>
+
+    <div class="info-grid reveal reveal-delay-2">
+      <div class="info-block">
+        <h2>About This Collection</h2>
+        <p>
+          Rather than just reading about JavaScript, I build things. This collection represents my <strong>learning-by-doing</strong> approach — every mini project targets a specific concept I want to understand deeply, not just skim.
+        </p>
+        <p>
+          Each project is intentionally small enough to finish in a day or two, but complex enough to force me to <strong>look things up, make mistakes, and figure things out</strong>. That cycle is the real learning.
+        </p>
+        <p>
+          As I progress through JavaScript — from DOM manipulation into async programming, APIs, and eventually frameworks — <strong>this collection will keep growing</strong>.
+        </p>
+
+        <h2 style="margin-top:2rem;">My Approach</h2>
+        <p>
+          I build each project first, then refactor. The first pass is about making it <strong>work</strong>. The second pass is about making it <strong>clean</strong>. This habit is already making me a more thoughtful developer.
+        </p>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-label">Concepts Covered</div>
+          <div class="tech-list">
+            <div class="tech-item"><span class="tech-dot"></span> DOM Manipulation</div>
+            <div class="tech-item"><span class="tech-dot"></span> Event Listeners</div>
+            <div class="tech-item"><span class="tech-dot"></span> Arrays & Loops</div>
+            <div class="tech-item"><span class="tech-dot"></span> localStorage</div>
+            <div class="tech-item"><span class="tech-dot"></span> Timers (setTimeout/Interval)</div>
+            <div class="tech-item"><span class="tech-dot"></span> Date Object</div>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Coming Next</div>
+          <div class="tech-list">
+            <div class="tech-item"><span class="tech-dot"></span> Fetch API</div>
+            <div class="tech-item"><span class="tech-dot"></span> Async / Await</div>
+            <div class="tech-item"><span class="tech-dot"></span> Promises</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRESS TRACKER -->
+    <div class="progress-tracker reveal">
+      <h2>JS Learning Roadmap</h2>
+      <div class="progress-list">
+        <div class="progress-item active">
+          <div class="progress-status done">✓</div>
+          <div class="progress-item-name">Variables, Data Types & Operators</div>
+          <div class="progress-item-label label-done">Done</div>
+        </div>
+        <div class="progress-item active">
+          <div class="progress-status done">✓</div>
+          <div class="progress-item-name">Functions & Scope</div>
+          <div class="progress-item-label label-done">Done</div>
+        </div>
+        <div class="progress-item active">
+          <div class="progress-status done">✓</div>
+          <div class="progress-item-name">DOM Manipulation</div>
+          <div class="progress-item-label label-done">Done</div>
+        </div>
+        <div class="progress-item active">
+          <div class="progress-status inprogress">→</div>
+          <div class="progress-item-name">Arrays, Objects & Loops</div>
+          <div class="progress-item-label label-progress">In Progress</div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-status todo">○</div>
+          <div class="progress-item-name">Async JavaScript (Promises, Async/Await)</div>
+          <div class="progress-item-label label-todo">Up Next</div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-status todo">○</div>
+          <div class="progress-item-name">Fetch API & Working with REST APIs</div>
+          <div class="progress-item-label label-todo">Upcoming</div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-status todo">○</div>
+          <div class="progress-item-name">ES6+ Features & Modern JS</div>
+          <div class="progress-item-label label-todo">Upcoming</div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-status todo">○</div>
+          <div class="progress-item-name">React.js Fundamentals</div>
+          <div class="progress-item-label label-todo">Future</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-cta reveal">
+      <div class="cta-text">
+        <h3>See The Collection</h3>
+        <p>All mini projects are live and open source on GitHub.</p>
+      </div>
+      <div class="cta-links">
+        <a href="#" class="btn-primary" target="_blank">View All ↗</a>
+        <a href="#" class="btn-ghost" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 <span>Emmanuel Ayodeji Oyewole</span></p>
+    <p>Project <span>03 / 03</span></p>
+  </footer>
+
+  <script src="js-mini.js"></script>
+</body>
+</html>

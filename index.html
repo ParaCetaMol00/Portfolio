@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Ayodeji Oyewole — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index/index.css" />
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo">EAO</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-circle c1"></div>
+    <div class="hero-bg-circle c2"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Available for opportunities</div>
+      <h1 class="hero-name">
+        Emmanuel<br>
+        <span>Ayodeji</span><br>
+        Oyewole
+      </h1>
+      <p class="hero-role">
+        &gt; <span class="typed-text" id="typedText"></span><span class="cursor-blink"></span>
+      </p>
+      <p class="hero-desc">
+        I build clean, performant, and thoughtful user interfaces. Currently sharpening my craft in frontend engineering — turning designs into living, breathing web experiences.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <!-- LEFT: Text + stats -->
+    <div class="about-text reveal">
+      <div class="section-label">01 — About Me</div>
+      <h2 class="section-title">Building With<br><span style="color:var(--amber)">Purpose</span></h2>
+      <p>
+        I'm <strong>Emmanuel Ayodeji Oyewole</strong>, a fullstack developer with a deep focus on frontend engineering.
+        I thrive at the intersection of design and code — where pixels meet logic and interfaces come alive.
+      </p>
+      <p>
+        I care deeply about <strong>user experience, code quality,</strong> and crafting interfaces that are not just functional, but genuinely delightful. Currently on my journey mastering JavaScript and the modern frontend ecosystem.
+      </p>
+      <div class="about-stats">
+        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Commitment</div></div>
+        <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Curiosity</div></div>
+        <div class="stat"><div class="stat-num">JS</div><div class="stat-label">Current Focus</div></div>
+        <div class="stat"><div class="stat-num">0→1</div><div class="stat-label">Builder</div></div>
+      </div>
+    </div>
+
+    <!-- MIDDLE: Photo slot -->
+    <div class="about-photo-col reveal reveal-delay-1">
+      <div class="about-photo">
+     
+        <div class="photo-placeholder">
+          <!-- <div class="ph-icon">👤</div> -->
+          <img src="./Images/Passport.jpg" alt="">
+        </div>
+      </div>
+      <span class="about-photo-name">Emmanuel A. Oyewole</span>
+    </div>
+
+    <!-- RIGHT: Code block -->
+    <div class="about-visual reveal reveal-delay-2">
+      <div class="about-code-block">
+        <span class="code-line"><span class="c-comment">// Emmanuel.js</span></span>
+        <span class="code-line"> </span>
+        <span class="code-line"><span class="c-key">const</span> developer <span class="c-bracket">= {</span></span>
+        <span class="code-line"> name: <span class="c-string">"Emmanuel Oyewole"</span>,</span>
+        <span class="code-line"> role: <span class="c-string">"Frontend Developer"</span>,</span>
+        <span class="code-line"> location: <span class="c-string">"Nigeria 🇳🇬"</span>,</span>
+        <span class="code-line"> </span>
+        <span class="code-line"> currentlyLearning: <span class="c-bracket">[</span></span>
+        <span class="code-line">  <span class="c-string">"JavaScript (Deep dive)"</span>,</span>
+        <span class="code-line">  <span class="c-string">"DOM Manipulation"</span>,</span>
+        <span class="code-line">  <span class="c-string">"Async Programming"</span>,</span>
+        <span class="code-line"> <span class="c-bracket">]</span>,</span>
+        <span class="code-line"> </span>
+        <span class="code-line"> values: <span class="c-bracket">[</span></span>
+        <span class="code-line">  <span class="c-string">"Clean code"</span>,</span>
+        <span class="code-line">  <span class="c-string">"Great UX"</span>,</span>
+        <span class="code-line">  <span class="c-string">"Continuous growth"</span>,</span>
+        <span class="code-line"> <span class="c-bracket">]</span>,</span>
+        <span class="code-line"> </span>
+        <span class="code-line"> availableForWork: <span class="c-num">true</span>,</span>
+        <span class="code-line"><span class="c-bracket">}</span></span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label reveal">02 — Skills</div>
+    <h2 class="section-title reveal reveal-delay-1">My <span style="color:var(--amber)">Toolkit</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon">🌐</div><div class="skill-name">HTML5</div><div class="skill-level">Solid</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:85%"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon">🎨</div><div class="skill-name">CSS3</div><div class="skill-level">Solid</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:80%"></div></div>
+      </div>
+      <div class="skill-card learning reveal reveal-delay-3">
+        <div class="skill-icon">⚡</div><div class="skill-name">JavaScript</div><div class="skill-level">Learning ✦</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:50%"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon">📐</div><div class="skill-name">Responsive Design</div><div class="skill-level">Comfortable</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:75%"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon">🔧</div><div class="skill-name">Git & GitHub</div><div class="skill-level">Comfortable</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:65%"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="skill-icon">🎭</div><div class="skill-name">Flexbox & Grid</div><div class="skill-level">Solid</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:78%"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon">✏️</div><div class="skill-name">Figma</div><div class="skill-level">Familiar</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:55%"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon">⚙️</div><div class="skill-name">VS Code</div><div class="skill-level">Daily Driver</div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="--fill:90%"></div></div>
+      </div>
+    </div>
+    <div class="skills-note reveal">
+      <div class="dot-amber"></div>
+      <span>Currently mastering JavaScript — Next targets: React, Node.js</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label reveal">03 — Projects</div>
+    <h2 class="section-title reveal reveal-delay-1">Selected <span style="color:var(--amber)">Work</span></h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal reveal-delay-1" data-url="project-portfolio/project-portfolio.html">
+        <div class="project-num">01</div>
+        <div class="project-title">Personal Portfolio</div>
+        <div class="project-desc">This very site — designed and built from scratch with vanilla HTML, CSS, and JavaScript. Focus on animation, performance, and clean structure.</div>
+        <div class="project-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" onclick="event.stopPropagation()">Live ↗</a>
+          <a href="#" target="_blank" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+        <div class="project-card-hint">View Project →</div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2" data-url="Landing-clone/landing-clone.html">
+        <div class="project-num">02</div>
+        <div class="project-title">Landing Page Clone</div>
+        <div class="project-desc">Pixel-perfect recreation of a modern SaaS landing page. Practiced responsive layouts, CSS animations, and cross-browser compatibility.</div>
+        <div class="project-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Responsive</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" onclick="event.stopPropagation()">Live ↗</a>
+          <a href="#" target="_blank" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+        <div class="project-card-hint">View Project →</div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3" data-url="mini-js/js-mini.html">
+        <div class="project-num">03</div>
+        <div class="project-title">JS Mini Projects</div>
+        <div class="project-desc">A collection of JavaScript exercises and mini-apps: a to-do list, a quiz app, a countdown timer — building logic and DOM skills one project at a time.</div>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">DOM</span>
+          <span class="tag">Logic</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" onclick="event.stopPropagation()">Live ↗</a>
+          <a href="#" target="_blank" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+        <div class="project-card-hint">View Project →</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="reveal">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Let's <span style="color:var(--amber)">Connect</span></h2>
+      <p class="contact-desc">
+        Whether you have an opportunity, a project idea, or just want to say hi — my inbox is open. I'm currently open to frontend roles and collaborations.
+      </p>
+      <div class="contact-socials">
+        <a href="mailto:emmanuelayodeji6@gmail.com" class="social-link">
+          <span>✉</span> emmanuelayodeji6@gmail.com
+          <span class="arrow">↗</span>
+        </a>
+        <a href="https://github.com" target="_blank" class="social-link">
+          <span>⌥</span> GitHub
+          <span class="arrow">↗</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-link">
+          <span>in</span> LinkedIn
+          <span class="arrow">↗</span>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-link">
+          <span>𝕏</span> Twitter / X
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <div class="contact-form">
+        <div class="form-field">
+          <label>Name</label>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell me what's on your mind..."></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="button">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 <span>Emmanuel Ayodeji Oyewole</span>. Designed & Built with care.</p>
+    <p>Frontend Developer <span>✦</span> Nigeria</p>
+  </footer>
+
+  <script src="index/index.js"></script>
+
+</body>
+</html>
