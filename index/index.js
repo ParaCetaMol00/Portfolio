@@ -18,6 +18,23 @@
       el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
     });
 
+
+    // ── Light / Dark mode toggle ───────────────────────────────
+// Saves preference to localStorage so it persists across pages
+const themeBtn = document.getElementById('themeToggle');
+
+// Apply saved preference on page load
+if (localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light-mode');
+  themeBtn.textContent = '🌙';
+}
+
+themeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  const isLight = document.body.classList.contains('light-mode');
+  themeBtn.textContent = isLight ? '🌙' : '☀️';
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+});
     // ── Navbar scroll ──────────────────────────────────────────
     window.addEventListener('scroll', () => {
       document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
@@ -71,4 +88,53 @@
         const url = this.getAttribute('data-url');
         if (url) window.location.href = url;
       });
+    });
+
+
+        // ── Contact Form — Formspree ───────────────────────────────
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn   = document.getElementById('submitBtn');
+
+    contactForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const originalText = submitBtn.textContent;
+
+      // Sending state
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch('https://formspree.io/f/xlgwajjg', {
+          
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(contactForm)
+        });
+
+        if (response.ok) {
+          // ✅ Success
+          submitBtn.textContent = '✓ Message Sent!';
+          submitBtn.style.background = '#22c55e';
+          contactForm.reset();
+          setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+          }, 4000);
+
+        } else {
+          throw new Error('Failed');
+        }
+
+      } catch (error) {
+        // ❌ Error
+        submitBtn.textContent = '✗ Failed. Try again';
+        submitBtn.style.background = '#ef4444';
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+        }, 4000);
+      }
     });

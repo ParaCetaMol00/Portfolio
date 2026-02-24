@@ -49,6 +49,33 @@
     .back-btn .arrow { transition:transform 0.2s; }
     .back-btn:hover .arrow { transform:translateX(-4px); }
 
+    /* Theme toggle button */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
+  cursor: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.theme-toggle:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+/* Light mode overrides — flips all CSS variables */
+body.light-mode {
+  --bg:         #F9F5EF;
+  --bg2:        #F0EBE1;
+  --bg3:        #E8E0D4;
+  --surface:    #EDE5D8;
+  --surface2:   #E3D9C8;
+  --text:       #1A1208;
+  --text-muted: #5C4A2A;
+  --text-dim:   #A0886A;
+  --border:     #D4C4A8;
+}
     .project-hero {
       min-height: 60vh;
       display: flex; align-items: flex-end;

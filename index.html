@@ -24,6 +24,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode">☀️</button>
   </nav>
 
   <!-- HERO -->
@@ -79,9 +80,7 @@
     <!-- MIDDLE: Photo slot -->
     <div class="about-photo-col reveal reveal-delay-1">
       <div class="about-photo">
-     
         <div class="photo-placeholder">
-          <!-- <div class="ph-icon">👤</div> -->
           <img src="./Images/Passport.jpg" alt="">
         </div>
       </div>
@@ -228,11 +227,11 @@
         Whether you have an opportunity, a project idea, or just want to say hi — my inbox is open. I'm currently open to frontend roles and collaborations.
       </p>
       <div class="contact-socials">
-        <a href="mailto:emmanuelayodeji6@gmail.com" class="social-link">
-          <span>✉</span> emmanuelayodeji6@gmail.com
+        <a href="mailto:eaocreates@gmail.com" class="social-link">
+          <span>✉</span> E-mail
           <span class="arrow">↗</span>
         </a>
-        <a href="https://github.com" target="_blank" class="social-link">
+        <a href="https://github.com/ParaCetaMol00" target="_blank" class="social-link">
           <span>⌥</span> GitHub
           <span class="arrow">↗</span>
         </a>
@@ -247,24 +246,27 @@
       </div>
     </div>
 
+    
     <div class="reveal reveal-delay-2">
-      <div class="contact-form">
+
+      <form class="contact-form" id="contactForm">
         <div class="form-field">
           <label>Name</label>
-          <input type="text" placeholder="Your name">
+          <input type="text" name="name" placeholder="Your name" required />
         </div>
         <div class="form-field">
           <label>Email</label>
-          <input type="email" placeholder="your@email.com">
+          <input type="email" name="email" placeholder="your@email.com" required />
         </div>
         <div class="form-field">
           <label>Message</label>
-          <textarea rows="5" placeholder="Tell me what's on your mind..."></textarea>
+          <textarea rows="5" name="message" placeholder="Tell me what's on your mind..." required></textarea>
         </div>
         <div class="form-submit">
-          <button type="button">Send Message</button>
+          <button type="submit" id="submitBtn">Send Message</button>
         </div>
-      </div>
+      </form>
+
     </div>
   </section>
 
@@ -275,6 +277,8 @@
   </footer>
 
   <script src="index/index.js"></script>
+
+
 
 </body>
 </html>

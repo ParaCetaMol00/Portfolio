@@ -13,3 +13,20 @@
     });
     const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:0.1});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // ── Light / Dark mode toggle ───────────────────────────────
+// Saves preference to localStorage so it persists across pages
+const themeBtn = document.getElementById('themeToggle');
+
+// Apply saved preference on page load
+if (localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light-mode');
+  themeBtn.textContent = '🌙';
+}
+
+themeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  const isLight = document.body.classList.contains('light-mode');
+  themeBtn.textContent = isLight ? '🌙' : '☀️';
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+});
